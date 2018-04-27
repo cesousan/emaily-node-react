@@ -1,0 +1,17 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "engines": {
+    "node": "9.4.0",
+    "npm": "5.6.0"
+  },
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "csabater",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}

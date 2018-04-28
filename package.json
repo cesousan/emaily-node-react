@@ -8,7 +8,9 @@
   },
   "scripts": {
     "start": "node index.js",
-    "dev": "nodemon index.js"
+    "server": "nodemon index.js",
+    "client": "npm run start --prefix client",
+    "dev": "concurrently \"yarn run server\" \"yarn run client\""
   },
   "author": "csabater",
   "license": "MIT",
@@ -20,6 +22,7 @@
     "passport-google-oauth20": "^1.0.0"
   },
   "devDependencies": {
+    "concurrently": "^3.5.1",
     "nodemon": "^1.17.3"
   }
 }
